@@ -1,0 +1,124 @@
+#footer{
+	width:$footer-width;
+	background-color:$footer-background;
+	color:$color-primary;
+	.container-full{
+		width:90%;
+		height:100%;
+		margin:0 auto;
+	}
+	a{
+		color:white;
+	}
+}
+/** ============= footer - top ================= **/
+#ft-top{
+	margin-top:1.5rem;
+	padding-top:3rem;
+	.ft-social{
+		a{
+			padding:0 0.5rem;
+		}
+	}
+	#address{
+		p{
+			margin-bottom:0;
+		}
+	}
+	#contact{
+		strong{
+			text-align:left;
+		}
+	}
+	#formSendMail{
+		width:30%;
+		h4.title{
+			font-size: 0.9rem;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #ccc;
+			padding-bottom: 0.6rem;
+		}
+		.form-group{
+			display: flex;
+			border: 1px solid #c5b2b2;
+			padding: 0.5rem;
+			border-radius: 3px;
+			#txtEmail{
+				width: 100%;
+				outline: none;
+				border: none;
+				color: white;
+				background-color: transparent;
+				font-weight: 500;
+				font-size: 0.9rem;
+			}
+		}
+		button#join{
+			border: none;
+			background-color: transparent;
+			color: white;
+			text-transform: uppercase;
+			font-weight: 600;
+			padding-left: 1rem;
+		}
+	}
+}
+/** =========== footer - center ============= **/
+#ft-center{
+	.nav-item{
+		list-style:none;
+		font-size:0.8rem;
+		.nav-link{
+			padding-left:0;
+		}
+	}
+	.ft-title-menu{
+		font-size: 1.4rem;
+		margin-bottom: 1.5rem;
+	}
+	#ft-menu-area{
+		width: 80%;
+		margin: 0 auto;
+		.ft-menu{
+			width:50%;
+			float:left;
+		}
+		&:before,&:after{
+			content:'';
+			clear:both;
+			display:block;
+		}
+	}
+	#feature{
+		margin-top:15%;
+		.item{
+			h4.title{
+				font-size: 0.9rem;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #ded8d8;
+			}
+		}
+	}
+}
+/** ============== footer - bottom ================ **/
+#ft-bottom{
+	margin-top:1rem;
+	padding-bottom:1rem;
+	#copy-right{
+		margin-left:3rem;
+	}
+	#ft-menu-bottom{
+		flex-direction: row;
+		.nav-item{
+			padding:0 0.5rem;
+			&:nth-child(1){
+				margin-right:1.5rem;
+			}
+			img{
+				width:45px;
+			}
+		}
+	}
+}

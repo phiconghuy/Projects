@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["+Z2WM"]); }
+
+__d("OzConfigurableRequestImplementation",["MaybeNativePromise","oz-player/utils/arrayBuffer2OzReadableStream","parseHeaders"],(function(a,b,c,d,e,f){"use strict";function a(a){return function(c,d,e){var f={url:c,http:d,options:e,method:"GET",responseType:"arraybuffer"};c=new(b("MaybeNativePromise"))(function(c,d){a(f,function(a,d,e){a={body:b("oz-player/utils/arrayBuffer2OzReadableStream")(a),headers:new Headers(b("parseHeaders")(e)),ok:!0,status:d};c(a)},function(a,e,f){if(a==null||a==="0")d(new TypeError("NetworkError"));else{f={body:b("oz-player/utils/arrayBuffer2OzReadableStream")(new ArrayBuffer(0)),headers:new Headers(b("parseHeaders")(e)),ok:!1,status:a};c(f)}})});return c}}e.exports=a}),null);
+__d("multiway_VideoQuality",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({LOW:0,MEDIUM:1,HIGH:2,HD:3,NUM_QUALITIES:4})}),null);

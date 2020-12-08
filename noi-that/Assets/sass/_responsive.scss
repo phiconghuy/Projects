@@ -1,0 +1,297 @@
+/** ==== Responsive for screens smaller than 1225px === **/
+@media screen and (max-width: 1380px){
+	/** =========== header  ===============**/
+	.navbar-expand-lg .navbar-toggler{
+		display:block!important;
+	}
+	#hd-menu-left{
+		position:fixed;
+		top:0;
+		left:-400px;
+		background-color:#ffffff;
+		width:400px;
+		height:100vh;
+		transition:.5s;
+		flex-direction: column;
+		#header-menu{
+			padding-bottom: 2rem;
+			margin:0 2rem;
+			border-bottom: 1px solid #333;
+			#close-menu{
+				width: 40px;
+				height: 40px;
+				background: transparent;
+				float: right;
+				transform: translate(14px,10px);
+				border-radius: 100%;
+				outline: none;
+				border: none;
+				.icon{
+					color:#333;
+					cursor:pointer;
+				}
+			}
+		}
+		.connect-account{
+			display:flex;
+		}
+	}
+	#hd-menu-left{
+		.nav-item{
+			margin:0.5rem 2rem;
+			.nav-link{
+				color:black;
+			}
+		}
+		#pages{
+			.nav-link{
+				border-left:none;
+				padding:0;
+			}
+		}
+	}
+	#hd-menu-left.show{
+		left:0;
+		z-index:100;
+	}
+	.hover-animate{
+		&:before{
+			content:"";
+			background-color:transparent;
+		}
+	}
+	/** ============== banner ============= **/
+	#wrapBox{
+		width:95%;
+	}
+}
+@media screen and (max-width: 1030px){
+	/** ============= header ============= **/
+	#hd-menu-right{
+		.block{
+			flex-direction:row!important;
+		}
+	}
+	.box-search{
+		#wrapper-search{
+			width:96%;
+		}
+	}
+	/** ============ banner ================ **/
+	.wrap-banner{
+		margin-top:17rem;
+		.btn-link{
+			display:inline-block;
+		}
+	}
+	#wrapBox{
+		display:none!important;
+	}
+	/** =========== footer ==============**/
+	// footer-top
+	#footer{
+		#ft-top{
+			flex-wrap:wrap;
+			.item{
+				#ft-wrapper-logo{
+					text-align:left;
+				}
+				.ft-social{
+					text-align:right;
+				}
+				&:first-child,&:last-child{
+					transform:translateY(-0.5rem);
+					width:20%;
+				}
+				&:nth-child(2),&:nth-child(3){
+					width:30%;
+				}
+			}
+			#formSendMail{
+				width:100%!important;
+			}
+		}
+		#ft-center{
+			#ft-menu-area{
+				width:100%;
+			}
+			#feature{
+				margin-top:4%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px){
+	/** ============ header ============= **/
+	#header {
+		.navbar{
+			flex-wrap: nowrap;
+		}
+		#hd-menu-right{
+			min-width:500px;
+			flex-direction:row;
+			justify-content:flex-end;
+		}
+	}
+	/** ========== footer =============**/
+	#ft-center{
+		#help,#about{
+			margin-top:1rem;
+		}
+	}
+	#ft-bottom{
+		#copy-right{
+			margin:0.5rem 0;
+		}
+		#ft-menu-bottom{
+			.nav-item{
+				&:first-child{
+					padding:0;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 840px){
+	/** ============= header ============== **/
+	#header{
+		.container{
+			min-width:100%;
+			margin:0;
+			padding:0;
+		}
+		#hd-menu-right{
+			min-width:60%;
+		}
+	}
+	#hd-menu-right{
+		.block #phone{
+			display:none;
+		}
+		& .nav-item:last-child{
+			display:none;
+		}
+	}
+	#lightBox{
+		width:95%;
+		.wishlist{
+			display:none
+		}
+		#form-area{
+			width:100%;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	#box-search{
+		#wrapper-search{
+			width:90%;
+			.trending{
+				width:100%;
+			}
+		}
+	}
+	/** =========== footer ==============**/
+	// footer-top
+	#footer{
+		#ft-top{
+			.item,#formSendMail{
+				width:100%!important;
+				margin:0.2rem 0;
+			}
+			.item{
+				#address{
+					flex-direction: column;
+					align-items:start!important;
+					p{
+						margin:0.3rem 0!important;
+					}
+				}
+				.ft-social{
+					text-align:left;
+					a{
+						padding:0 1rem 0 0!important;
+					}
+				}
+			}
+			
+		}
+	}
+	// footer - center
+	#ft-center{
+		#feature{
+			.item{
+				align-items:start!important;
+				margin:0 1rem 0 0 !important;
+			}
+		}
+	}
+	// footer - bottom 
+	#ft-bottom{
+		.navbar-nav{
+			flex-wrap:wrap;
+			.nav-item{
+				padding:0 1rem 0 0!important;
+				margin: 0.4rem 0.3rem;
+			}
+			.nav-item{
+				&:first-child{
+					width:100%;
+					margin-bottom:0.5rem;
+				}
+			}
+		}
+	}
+}
+/** ==== Responsive for screens smaller than 600px === **/
+@media screen and (max-width: 600px){
+	/** ============ header ============= **/
+	.box-search{
+		#wrapper-search{
+			.trending{
+				width:100%;
+			}
+		}
+	}
+	#hd-menu-left{
+		width:100%;
+		left:-100%;
+	}
+	#hd-menu-right{
+		.nav-item{
+			margin-left:1rem;
+		}
+	}
+}
+@media screen and (max-width: 450px){
+	#header{
+		#hd-menu-right{
+			min-width:45%;
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	/** -------------- header ------------- **/
+	#header{
+		#hd-menu-right{
+			min-width:42%;
+		}
+		.box-search{
+			#wrapper-search{
+				h5.title{
+					font-size:0.8rem;
+				}
+			}
+		}
+	}
+	/** --------- footer ------------ **/
+	#ft-bottom{
+		.navbar-nav{
+			justify-content:center;
+			.nav-item{
+				margin: 0.4rem 0.3rem;
+			}
+		}
+	}
+}
+	

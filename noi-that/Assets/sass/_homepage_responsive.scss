@@ -1,0 +1,271 @@
+/** ==== Responsive for screens smaller than 1225px === **/
+@media screen and (max-width: 1380px){
+	/** ============== banner ============= **/
+	#wrapBox{
+		width:95%;
+	}
+	#bottom-banner{
+		.scroll{
+			display:none;
+		}
+	}
+	/** ============ product-area-3 =============**/
+	#product-area-3{
+		#sidebar-right{
+			div{
+				.title{
+					font-size:1.5rem;
+				}
+				a.btn-link{
+					width: 180px;
+					height: 40px;
+					font-size: 0.8rem;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+	/** ============= slider ==============**/
+	#main{
+		#sidebar-right.sidebar-fixed{
+			width: 22%;
+		}
+	}
+	/** ============= product-area-4 ============= **/
+	#main{
+		#product-area-4{
+			.sidebar-fixed{
+				width:30%!important;
+			}
+		}
+	}
+}
+
+/** ==== Responsive for screens smaller than 995px === **/
+@media screen and (max-width: 991px){
+	/** ============ main ============= **/
+	/** -------- gallery-3--------**/
+	#main{
+		.sidebar{
+			position:unset!important;
+			height:250px!important;
+			width:100%!important;
+			padding-bottom:2rem;
+		}
+	}
+	/** --------- product-area-3 --------- **/
+	#product-area-3{
+		#large-photo-area{
+			display:none;
+			.col-lg-9{
+				margin-top:0!important;
+			}
+		}
+	}
+	/** --------- slider -----------**/
+	#slider{
+		.slide-area{
+			.slide-item{
+				.wrapContent{
+					bottom:35%;
+				}
+			}
+		}
+		.dots{
+			bottom:30%;
+		}
+		.content{
+			right:unset!important;
+			bottom:2rem;
+			padding-left:2rem;
+			h3.title{
+				text-align:left;
+				font-size:1.5rem;
+			}
+			p{
+				text-align:left;
+			}
+			#discover-more{
+				text-align:left;
+				font-size:0.9rem;
+				width: 180px;
+			}
+		}
+	}
+	/** ============ gallery(section main) ========== **/
+	#gallery{
+		#box-1{
+			img{
+				height:350px;
+			}
+			.wrapContent{
+				top:-50%;
+			}
+		}
+	}
+}
+/** ==== Responsive for screens smaller than 800px === **/
+@media screen and (max-width: 840px){
+	/** =============== main ================= **/
+	#main{
+		.content-top{
+			width:550px;
+		}
+		.btn-link{
+			display:inline-block;
+		}
+		.content-top{
+			.headline{
+				font-size:1.8rem;
+			}
+		}
+	}
+}
+@media screen and(max-width: 768px){
+	/** =============== banner =============== **/
+	#banner{
+		height:600px;
+		.wrap-banner{
+			margin-top: 7rem;
+			padding-left:1.5rem;
+		}
+	}
+	/** ================== main =============== **/
+	#main{
+		.image-item{
+			height:270px;
+			.image-content{
+				top:40%;
+			}
+		}
+		#product-area-2{
+			.menu-block{
+				top:30%;
+			}
+		}
+	}
+	/** ----------- gallery --------- **/
+	#gallery{
+		#box-1{
+			img{
+				height:400px;
+			}
+			.wrapContent{
+				top:-15%;
+				.text{
+					font-size:0.9rem;
+				}
+			}
+		}
+	}
+}
+/** ==== Responsive for screens smaller than 600px === **/
+@media screen and (max-width: 600px){
+	#main{
+		.image-content{
+			.product-title{
+				font-size:1.4rem;
+			}
+		}
+	}
+	/** ============== banner ============= **/
+	.wrap-banner{
+		.content-top{
+			width:100%;
+		}
+	}
+}
+/** ==== Responsive for screens smaller than 600px === **/
+@media screen and (max-width: 576px){
+	/** ============= banner ============ **/
+	#banner{
+		.wrap-banner{
+			.content-top{
+				width:100%;
+			}
+		}
+	}
+	/** ============= main ============== **/
+	#main{
+		.wrap-sidebar{
+			.sidebar{
+				.title{
+					font-size:1.6rem;
+				}
+			}
+		}
+		.container-full{
+			width:90%;
+		}
+		#product-area-1{
+			.image-item{
+				.menu-block{
+					width:100%
+				}
+			}
+		}
+		#slider{
+			.slide-item{
+				.wrapContent{
+					width:100%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px){
+	/** ------------- banner ------------- **/
+	#bottom-banner{
+		.social{
+			a{
+				&:last-child{
+					display:block;
+					margin-top:0.5rem;
+				}
+			}
+		}
+	}
+
+	
+	/** -------------- main --------------- **/
+	#gallery{
+		#box-1{
+			img{
+				height:500px;
+			}
+		}
+	}
+	/** ------------ product-area 3 and 4 ----------- **/
+	#main{
+		.sidebar{
+			div{
+				a.btn-link{
+					margin-top:0!important
+				}
+
+			} 
+		}
+	}
+	/** --------- slider ------------ **/
+	#slider{
+		.content{
+			h3.title{
+				font-size:1.8rem;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

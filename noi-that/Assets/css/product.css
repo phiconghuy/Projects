@@ -1,0 +1,556 @@
+.wrapContent {
+  max-width: 1400px;
+  width: 97%;
+  margin: 0 auto;
+}
+
+/** ============= header =============== **/
+#header #hd-menu-left .nav-item .nav-link {
+  color: #333 !important;
+}
+#header #hd-menu-left .active .nav-link {
+  border-bottom: 2px solid #333;
+}
+#header #hd-menu-right .nav-item .nav-link {
+  color: #333 !important;
+}
+#header #hd-menu-right #btnUser .icon, #header #hd-menu-right #btnSearch .icon {
+  color: #333 !important;
+}
+#header #hd-menu-right .nav-item span, #header #hd-menu-right .nav-item #requestACall {
+  color: #333 !important;
+}
+#header #hd-menu-right .nav-item span .icon, #header #hd-menu-right .nav-item #requestACall .icon {
+  color: #333 !important;
+}
+#header #hd-menu-right .nav-item #btn-link-catalogue {
+  border: 0.1rem solid #333;
+}
+
+/** ================ main ===============**/
+#main {
+  padding-top: 10rem;
+}
+#main .wrapper {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+#main img {
+  width: 100%;
+}
+#main #bookcases {
+  color: #969696;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+#main .product {
+  position: relative;
+}
+
+/** ---------------- info ---------------- **/
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info .info-left {
+  width: 100%;
+  max-width: 650px;
+}
+.info .info-left .product-title {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 2.3rem;
+}
+.info .info-left .product-price {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 600;
+}
+.info .info-left .text {
+  padding-top: 1rem;
+  font-weight: 400;
+}
+.info .info-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.info .info-right .btn-link {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 3.5rem;
+  background-color: black;
+}
+.info .info-right .btn-link .icon {
+  margin-right: 1rem;
+  font-size: 14px;
+}
+.info .info-right .btn-link:hover {
+  text-decoration: none;
+}
+
+.product-share {
+  position: absolute;
+  left: -7vw;
+  top: 100px;
+  width: 30px;
+  left: 10;
+  height: 200px;
+  text-transform: uppercase;
+}
+.product-share .icon-social {
+  width: 100%;
+  font-size: 16px;
+  color: #ccc;
+  display: block;
+  text-align: center;
+}
+.product-share #share {
+  display: block;
+  color: #333;
+  transform: rotate(270deg) translate(-25px, -2px);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+/** ------------- add to wishlist -------------- **/
+.add-to-wishlist {
+  color: black;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.add-to-wishlist:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/** ----------- picture area -------------- **/
+.picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.picture .more {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+}
+.picture .more span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  box-shadow: 0 0 4px 1px white;
+}
+.picture .more span:first-child {
+  transform: translateY(-10px);
+}
+.picture .more span:last-child {
+  transform: translateY(-46px) rotate(90deg);
+}
+.picture:hover .more {
+  display: block;
+}
+.picture img {
+  display: none;
+}
+.picture img.active {
+  display: block;
+  cursor: pointer;
+}
+
+#category {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 3rem 1.5rem;
+  color: #ccc;
+  display: block;
+}
+
+/** ----------------- wrapContent ---------------- **/
+.wrapContent .item {
+  padding: 0 2rem;
+}
+.wrapContent .item h3.title {
+  margin-bottom: 1.5rem;
+}
+.wrapContent .item .description {
+  font-size: 0.9rem;
+}
+.wrapContent button.review {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: transparent;
+  border: 1px solid #333;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+.wrapContent #formReview {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+}
+.wrapContent #formReview .title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.wrapContent #formReview p:nth-child(1) {
+  margin-top: 1.5rem;
+}
+.wrapContent #formReview p:nth-child(2) {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.wrapContent #formReview #rating {
+  margin-bottom: 2rem;
+}
+.wrapContent #formReview #rating span {
+  color: red;
+}
+.wrapContent #formReview .form-group input[type=checkbox] ~ label {
+  margin-left: 1rem;
+}
+.wrapContent #formReview button#submit {
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/** ==================== about =================== **/
+#box {
+  max-width: 700px;
+  width: 100%;
+  margin: 4rem auto;
+}
+#box h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 1.5rem;
+  text-align: center;
+}
+#box .text {
+  text-align: center;
+  margin-top: 2.5rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+.content .text {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.content #signature {
+  width: 150px !important;
+}
+
+/** =================== related-products =================== **/
+#related-products {
+  margin-top: 3.5rem;
+}
+#related-products .title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#related-products .wrapContent {
+  width: 96%;
+}
+#related-products .wrapContent .product-title {
+  font-size: 1.3rem;
+}
+#related-products .wrapContent .new-price {
+  font-weight: 700;
+}
+
+/** ================ light box image ================ **/
+.lightBoxImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.lightBoxImage button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #d6d6d6;
+  margin: 0 0.7rem;
+}
+.lightBoxImage .wrap {
+  width: 97%;
+  height: 100%;
+}
+.lightBoxImage button:focus {
+  outline: none !important;
+}
+.lightBoxImage .top {
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  position: fixed;
+  top: 0;
+  background-color: #00000070;
+  z-index: 1000;
+}
+.lightBoxImage .top #left span {
+  color: white;
+  font-size: 0.8rem;
+}
+.lightBoxImage .center {
+  margin-top: 2.5rem;
+  width: 97%;
+  height: 90%;
+}
+.lightBoxImage .center button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.lightBoxImage .center #wrapImage {
+  width: 700px;
+  height: 100%;
+}
+.lightBoxImage .center #wrapImage .img-primary {
+  transition: 0.5s;
+  transform: scale(1);
+}
+.lightBoxImage .center #wrapImage .img-primary.zoom-in {
+  transform: scale(1.2);
+}
+.lightBoxImage .bottom {
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #00000070;
+  z-index: 1000;
+}
+.lightBoxImage .bottom p {
+  margin-left: 30%;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/** ==== Responsive for screens smaller than 1225px === **/
+@media screen and (max-width: 1380px) {
+  .row {
+    margin: 0 !important;
+  }
+
+  /** =========== header  ===============**/
+  #header #icon-menu .icon {
+    color: black;
+  }
+  #header #hd-menu-left .active .nav-link {
+    border-bottom: transparent;
+  }
+
+  /** ============ main ============= **/
+  #bookcases {
+    margin-left: 15px;
+  }
+
+  .info {
+    padding: 0 15px;
+  }
+
+  .add-to-wishlist {
+    margin-left: 15px;
+  }
+}
+/** ============== related-products ============= **/
+#related-products .title {
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1030px) {
+  .info .info-left {
+    width: 60%;
+  }
+  .info .info-right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #header .container {
+    min-width: 100%;
+  }
+
+  #box .text {
+    font-size: 0.9rem;
+  }
+
+  /** =================== main ================== **/
+  #main {
+    padding-top: 7rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #picture-area {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    order: 1;
+  }
+
+  .wrap-picture {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .wrap-picture:nth-child(2), .wrap-picture:nth-child(3) {
+    display: none;
+  }
+
+  #bookcases {
+    order: 2;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .add-to-wishlist {
+    margin: 1.5rem 0 0 0;
+    order: 3;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+    padding: 0;
+  }
+  .info .info-left {
+    width: 100%;
+    max-width: unset;
+  }
+  .info .info-right {
+    width: 100%;
+  }
+  .info .info-right a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  #category {
+    order: 5;
+    margin: 2.5rem 0;
+  }
+
+  .wrapContent {
+    width: 95%;
+  }
+  .wrapContent .description {
+    font-size: 0.9rem;
+  }
+  .wrapContent ul {
+    margin-left: 2rem;
+    font-size: 0.9rem;
+  }
+  .wrapContent .item {
+    padding: 0;
+  }
+
+  /** ==================== about =================== **/
+  #about .wrapContent .row .text {
+    margin-top: 2rem;
+  }
+  #about .wrapContent .item {
+    padding: 0 15px;
+  }
+
+  .content {
+    width: 90%;
+  }
+  .content .text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-share {
+    display: none;
+  }
+
+  #box h4 {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+
+  /** ==================== about =================== **/
+  .picture {
+    width: 100%;
+  }
+
+  .info .info-left .product-title {
+    font-size: 1.7rem;
+  }
+  .info .info-left .text {
+    font-size: 0.9rem;
+  }
+
+  .lightBoxImage .center {
+    width: 100%;
+  }
+  .lightBoxImage .center .button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    position: absolute;
+    z-index: 100;
+  }
+  .lightBoxImage .center .button:first-child {
+    left: 0.5rem;
+  }
+  .lightBoxImage .center .button:last-child {
+    right: 0.5rem;
+  }
+  .lightBoxImage .center #wrapImage {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightBoxImage .center #wrapImage .img-primary {
+    height: auto !important;
+  }
+  .lightBoxImage .center #wrapImage .img-primary.zoom-in {
+    transform: scale(1.9);
+  }
+}

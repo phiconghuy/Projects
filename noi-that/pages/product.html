@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./../Assets/css/style.css" />
+	<link rel="stylesheet" href="./../Assets/css/product.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./../Assets/fonts/fontaweasome/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<script src="./../Assets/fonts/fontaweasome/js/all.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./../Assets/js/jquery.lazy.min.js"></script>
+	<script type="module" src="./../Assets/js/app.js"></script>
+	<script type="module" src="./../Assets/js/product.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107px" height="44px" viewBox="0 0 107 44" version="1.1"><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link"/><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link"/><style xmlns="" type="text/css" id="dark-mode-custom-style"/>
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="logo" fill="#090909" fill-rule="nonzero">
+								<path d="M94.788,17.72 L88.452,17.72 L84.996,27.296 L81.54,17.72 L75.204,17.72 L82.152,33.92 L77.6054266,44 L2,44 C0.8954305,44 -2.96984659e-15,43.1045695 -0,42 L-0,2 C-2.96984659e-15,0.8954305 0.8954305,2.02906125e-16 2,0 L105,0 C106.104569,-2.02906125e-16 107,0.8954305 107,2 L107,42 C107,43.1045695 106.104569,44 105,44 L83.9332174,44 L94.788,17.72 Z M47.556,20.924 L47.556,17.72 L41.796,17.72 L41.796,35 L47.556,35 L47.556,28.628 C47.556,25.82 49.068,23.948 50.724,23.48 C51.768,23.192 52.812,23.156 53.892,23.48 L53.892,17.144 C50.652,17.36 48.744,18.44 47.556,20.924 Z M66.06,30.536 C65.376,30.536 64.692,30.428 64.26,30.176 L74.484,24.056 C73.152,18.332 68.76,17.144 66.276,17.144 C60.264,17.144 56.628,21.248 56.628,26.36 C56.628,31.472 60.264,35.576 66.276,35.576 C69.048,35.576 71.424,34.568 73.332,32.732 L70.38,28.88 C69.336,29.852 67.788,30.536 66.06,30.536 Z M66.276,22.184 C67.212,22.184 67.86,22.652 68.148,23.12 L62.172,26.684 C61.812,23.984 63.828,22.184 66.276,22.184 Z" id="Rey-Logo"/>
+							</g>
+						</g>
+					</svg>
+
+				</a>
+				<button class="navbar-toggler mr-auto border-0" id="icon-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-align-justify icon"></i>
+				</button>
+				<ul class="navbar-nav mr-auto" id="hd-menu-left">
+					<li class="nav-item active">
+						<a class="nav-link hover-animate" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-animate" href="#">Catalogue</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-animate" href="#">Discover Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-animate" href="#">Magazine</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-animate" href="#">Find Dealer</a>
+					</li>
+					<li class="nav-item" id="pages">
+						<a class="nav-link hover-animate" href="javascript:void(0)">Pages</a>							
+						<div id="modal">
+							<div class="site">
+								<h5>Site</h5>
+								<ul class="menu">
+									<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Frequently asked question</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Store locator</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Blog Post</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Term & conditions</a></li>
+								</ul>
+							</div>
+							<div class="shop">
+								<h5>Shop</h5>
+								<ul class="menu">
+									<li class="nav-item"><a href="#" class="nav-link">Catalogue</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Category</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Product / Catalog Item</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Wishlist locator</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Checkout</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<div class="connect-account">
+						<a href="#" class="btn-link">Connect to your account</a>
+						<a href="#" class="btn-link" id="icon-user"><i class="fas fa-user icon"></i></i></a>
+					</div>
+				</ul>
+				<ul class="navbar-nav ml-auto d-flex align-items-center" id="hd-menu-right">
+					<li class="nav-item active">
+						<button class="my-2 my-sm-0" type="submit" id="btnSearch"><i class="fas fa-search icon"></i></button>
+					</li>
+					<li class="nav-item">
+						<button class="my-2 my-sm-0" type="submit" id="btnUser"><i class="fas fa-user icon"></i></button>
+						<div id="lightBox" style="display:none">
+							<div class="wishlist">
+								<h4 class="title">Wishlist</h4>
+								<p class="content">Your Wishlist is currently empty.</p>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<p class="block d-flex flex-column">
+							<span id="phone">+44 589 58 58 00</span>
+							<a href="#" id="requestACall" class="hover-animate">Request A Call</a>
+						</p>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="btn-link-catalogue">get free catalogue</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="box-search"></div>
+	</header>
+
+	<!-- BEGIN MAIN -->
+	<main id="main">		
+		<section class="product">
+			<div class="wrapper">
+				<a href="#" id="bookcases">Bookcases</a>
+				<div class="info">
+					<div class="info-left">
+						<h3 class="product-title">Ameriwood Basics Dellwood Audio Stand</h3>
+						<span class="product-price">$129.00</span>
+						<p class="text">Proactively communicate corporate process improvements via corporate scenarios. Progressively aggregate proactive data after diverse users. Rapidiously redefine front-end interfaces before go forward process improvements.</p>
+					</div>
+					<div class="info-right">
+						<a href="#" class="btn-link"><i class="fas fa-map-marker-alt icon"></i> Find a dealer near you</a>
+					</div>
+				</div>
+				<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i> add to wishlist</a>
+				<div class="row" id="picture-area">
+					<div class="col-lg-6 col-md-12 mt-3 wrap-picture">
+						<div class="picture" id="group-1">
+							<button class="more">
+								<span></span><span></span>
+							</button>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm" class="active img"/>
+							<img src="./../Assets/images/slide-3.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+							<img src="./../Assets/images/img-4.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+						</div>
+					</div>
+					<div class="col-lg-6 mt-3  wrap-picture">
+						<div class="picture" id="group-2">
+							<button class="more">
+								<span></span><span></span>
+							</button>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm" class="active img"/>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+						</div>
+					</div>
+					<div class="col-lg-12 mt-3  wrap-picture">
+						<div class="picture" id="group-3">
+							<button class="more">
+								<span></span><span></span>
+							</button>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm" class="active img"/>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+							<img src="./../Assets/images/81IqEOzTvL._SL15020_-600x600.jpg" alt="ảnh sản phẩm" title="ảnh sản phẩm"/>
+						</div>
+					</div>
+				</div>
+				<strong id="category">Category : <span>Dresser</span></strong>
+				<div class="product-share">
+					<a href="#"  title="Maribel Dresser" class="icon-social"><i class="fab fa-twitter"></i></a>
+					<a href="#" title="Maribel Dresser" class="icon-social"><i class="fab fa-linkedin"></i></a>
+					<a href="#" title="Maribel Dresser" class="icon-social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" title="Maribel Dresser" class="icon-social"><i class="fab fa-pinterest-p"></i></a>
+					<a href="#"  title="Maribel Dresser" class="icon-social"><i class="far fa-envelope"></i></a>
+					<a href="#" id="share">Share</a>
+				</div>
+			</div>
+			<div class="wrapContent">
+				<div class="row d-flex align-items-center">
+					<div class="col-lg-5 item">
+						<h3 class="title">Description</h3>
+						<p class="description">Compellingly grow performance based mindshare through parallel potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed materials. Competently brand timely catalysts for change through sustainable systems. Completely expedite ubiquitous bandwidth after integrated action items. Progressively transform leading-edge supply chains whereas flexible niche markets.</p>
+						<ul>
+							<li class="nav-item">Update your home style with the retro Summer chair that plays up, mid-century modern aesthetics</li>
+							<li class="nav-item">Walnut Wood finish with Charcoal Fabric upholstery</li>
+							<li class="nav-item">Great for a mix of modern and contemporary meets mid-century style</li>
+							<li class="nav-item">25″ W x22″ D x 31″ H</li>
+							<li class="nav-item">Comes with standard 1 year limited warranty</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 item">
+						<h3 class="title">Informations</h3>
+						<p>
+							<b>Shipping</b><br/>
+							We currently offer free shipping worldwide on all orders over $100.
+						</p>
+						<p>
+							<b>Sizing</b><br/>
+							Fits true to size. Do you need size advice?
+						</p>
+						<p>
+							<b>Return & exchange</b><br/>
+							If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund. More info.
+						</p>
+						<p>
+							<b>Assistance</b><br/>
+							Contact us on (+44) 555 88 65, or email us at <a href="#" class="link">support@retheme.com</a>
+						</p>
+					</div>
+					<div class="col-lg-3 item">
+						<h3 class="title">Specifications</h3>
+					</div>
+				</div>
+				<button class="review">Review (0) -</button>
+				<form id="formReview" style="display:none;">
+					<h4 class="title">Reviews</h4>
+					<p>There are no reviews yet.</p>
+					<p>Be the first to review “baxiton studio sorrento mid-century retro modern fabric upholsterep wooden lounge chair”</p>
+					<p><small>Your email address will not be published. Required fields are marked *</small></p>
+					<p><small>Your rating *</small></p>
+					<div id="rating">
+						<span class="star" id="1"><i class="far fa-star"></i></span>
+						<span class="star" id="2"><i class="far fa-star"></i></span>
+						<span class="star" id="3"><i class="far fa-star"></i></span>
+						<span class="star" id="4"><i class="far fa-star"></i></span>
+						<span class="star" id="5"><i class="far fa-star"></i></span>
+					</div>
+					<div class="form-group">
+						<label>Your review *</label>
+						<textarea rows="8" class="form-control" name="txt_review" id="txt_review" class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<label>Name *</label>
+						<input type="text" class="form-control" name="name" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Email *</label>
+						<input type="text" class="form-control" name="email" class="form-control"/>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" id="save" name="save"/>
+						<label>Save my name, email, and website in this browser for the next time I comment.</label>
+					</div>
+					<button type="submit" name="submit" id="submit">Submit</button>
+				</form>
+			</div>
+		</section>
+		<section id="about">
+			<div class="wrapContent">
+				<div id="box">
+					<div class="d-flex justify-content-center">
+						<h4>EST. 2001</h4>
+						<h4>15 DESIGNERS</h4>
+						<h4>WORLDWIDE DELIVERY</h4>
+					</div>
+					<p class="text">Appropriately develop high-quality interfaces vis-a-vis granular e-markets. Globally integrate accurate collaboration and idea-sharing after effective web services. Seamlessly streamline bleeding-edge paradigms for technically.</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<img src="./../Assets/images/about-1-1024x792.jpg" alt="Hình ảnh về chúng tôi" title="Hình ảnh về chúng tôi"/>
+					</div>
+					<div class="col-lg-6 d-flex flex-column justify-content-center">
+						<div class="content">
+							<p class="text">Appropriately develop high-quality interfaces vis-a-vis granular e-markets. Globally integrate accurate collaboration and idea-sharing after effective web services. Seamlessly streamline bleeding-edge paradigms for technically sound ROI. 
+
+								Globally integrate accurate collaboration and idea-sharing after effective web services. Seamlessly streamline bleeding-edge paradigms for technically sound ROI.</p>
+							<p class="text mt-3">Globally integrate accurate collaboration and idea-sharing after effective web services. Seamlessly streamline bleeding-edge paradigms for technically sound ROI.</p>
+							<img src="./../Assets/images/svg/signature.svg" alt="Chữ ký" title="Chữ ký" id="signature"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="related-products">
+			<div class="wrapContent">
+				<h1 class="title">Related products</h1>
+				<div class="row" id="product-area">
+					<div class="col-lg-4 col-md-6 mt-4">
+						<div class="slide-area" id="5-1">
+							<div class="list-slide">
+								<div class="slide-item active">
+									<img data-src="./../Assets/images/slide-1.jpg" alt="ảnh sản phẩm" class="img-product-1"/>
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-3.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-2.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+							</div>
+							<div class="wrapContent">					
+								<a href="#" class="link">Read More</a>
+								<a href="#" class="link">QuickView</a>
+								<a href="#" class="favourite"><i class="far fa-heart"></i></a>
+								<h3 class="product-title"><a href="#">Jorstad Dresser and Mirror</a></h3>
+								<span class="new-price">$ 22.6</span>
+							</div>
+							<div class="brick-in-image">
+								<span class="item-dot active"></span>
+								<span class="item-dot"></span>
+								<span class="item-dot"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mt-4">
+						<div class="slide-area" id="5-2">
+							<div class="list-slide">
+								<div class="slide-item active">
+									<img data-src="./../Assets/images/slide-1.jpg" alt="ảnh sản phẩm" class="img-product-1"/>
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-3.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-2.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+							</div>
+							<div class="wrapContent">					
+								<a href="#" class="link">Read More</a>
+								<a href="#" class="link">QuickView</a>
+								<a href="#" class="favourite"><i class="far fa-heart"></i></a>
+								<h3 class="product-title"><a href="#">Jorstad Dresser and Mirror</a></h3>
+								<span class="new-price">$ 22.6</span>
+							</div>
+							<div class="brick-in-image">
+								<span class="item-dot active"></span>
+								<span class="item-dot"></span>
+								<span class="item-dot"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mt-4">
+						<div class="slide-area" id="5-3">
+							<div class="list-slide">
+								<div class="slide-item active">
+									<img data-src="./../Assets/images/slide-1.jpg" alt="ảnh sản phẩm" class="img-product-1"/>
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-3.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+								<div class="slide-item">
+									<img data-src="./../Assets/images/slide-2.jpg" alt="ảnh sản phẩm" class="img-product-1"/>									
+								</div>
+							</div>
+							<div class="wrapContent">					
+								<a href="#" class="link">Read More</a>
+								<a href="#" class="link">QuickView</a>
+								<a href="#" class="favourite"><i class="far fa-heart"></i></a>
+								<h3 class="product-title"><a href="#">Jorstad Dresser and Mirror</a></h3>
+								<span class="new-price">$ 22.6</span>
+							</div>
+							<div class="brick-in-image">
+								<span class="item-dot active"></span>
+								<span class="item-dot"></span>
+								<span class="item-dot"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- END MAIN -->
+
+	<!-- BEGIN FOOTER -->
+	<footer id="footer">
+		<div class="container-full">
+			<div class="d-flex align-items-center justify-content-between" id="ft-top">
+				<div class="item">
+					<a href="#" id="ft-wrapper-logo" class="d-block">
+						<img data-src="./../Assets/images/logo-white.svg" alt="ảnh logo" title="logo" class="img-product"/>
+					</a>
+				</div>
+				<div class="item">
+					<address id="address" class="d-flex align-items-center">
+						<i class="fas fa-map-marker-alt icon"></i>
+						<p class="ml-2">17 irving PL,New York,<br/>NY 10003</p>
+					</address>
+				</div>
+				<div class="item">
+					<p id="contact">
+						<strong><a href="#">care@reytheme.com</a></strong><br/>
+						<strong>778 568 999</strong>
+					</p>
+				</div>
+				<div class="item">
+					<div class="ft-social">
+						<a href="#"><i class="fab fa-instagram icon-social icon"></i></a>
+						<a href="#"><i class="fab fa-facebook-f icon-social icon"></i></a>
+					</div>
+				</div>
+				<form id="formSendMail">
+					<h4 class="title">Receive email updates</h3>
+					<div class="form-group">
+						<input type="text" name="email" id="txtEmail" placeholder="Your email address"/>
+						<button type="submit" name="join" id="join">join</button>
+					</div>
+				</form>
+			</div>
+			<div class="row mt-5" id="ft-center">
+				<div class="col-lg-4 col-md-12">
+					<div id="ft-menu-area">
+						<h3 class="ft-title-menu">Shop</h3>
+						<ul class="ft-menu">
+							<li class="nav-item"><a href="#" class="nav-link">Sofas</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Beds</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Desks</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Lighting</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Nightstands</a></li>
+						</ul>
+						<ul class="ft-menu">
+							<li class="nav-item"><a href="#" class="nav-link">Dresser</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Tables</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Chairs</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Bookcases</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6" id="help">
+					<h3 class="ft-title-menu">Help</h3>
+					<ul class="ft-menu">
+						<li class="nav-item"><a href="#" class="nav-link">Faq</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Term & conditions</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6" id="about">
+					<h3 class="ft-title-menu">About</h3>
+					<ul class="ft-menu">
+						<li class="nav-item"><a href="#" class="nav-link">Magazine</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Discover us</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Find Dealer</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div id="feature" class="d-flex">
+						<div class="item d-flex justify-content-center align-items-start flex-column mx-3">
+							<img data-src="./../Assets/images/svg/truck-light.svg" alt="ảnh icon giao hàng" class="img-product"/>
+							<h4 class="title">Free shipping</h4>
+						</div>
+						<div class="item d-flex justify-content-center align-items-start flex-column mx-3">
+							<img data-src="./../Assets/images/svg/returns-light.svg" alt="Hình ảnh icon trả hàng" class="img-product"/>
+							<h4 class="title">Free returns</h4>
+						</div>
+						<div class="item d-flex justify-content-center align-items-start flex-column mx-3">
+							<img data-src="./../Assets/images/svg/support-light.svg" alt="Hình ảnh icon comment" class="img-product"/>
+							<h4 class="title">Support & Assistance</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="ft-bottom">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-12">
+						<p id="copy-right">@ Copyright 2019 <strong>Rey Them</strong></p>
+					</div>
+					<div class="col-xl-9 col-lg-8 col-md-12">
+						<ul class="navbar-nav d-flex" id="ft-menu-bottom">
+							<li class="nav-item">Secure payments</li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/visa-pay-logo.svg" alt="icon visa" class="img-product"/></li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/american-express-logo.svg" alt="icon american express" class="img-product"/></li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/applepay.svg" alt="icon visa" class="img-product"/></li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/american-express-logo.svg" alt="icon american express" class="img-product"/></li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/paypal-logo.svg" alt="icon visa" class="img-product"/></li>
+							<li class="nav-item"><img data-src="./../Assets/images/svg/master-card-logo.svg" alt="icon american express" class="img-product"/></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->

@@ -1,0 +1,245 @@
+/**  ================= BANNER =================== **/
+#banner{
+	width:100%;
+	height:650px;
+	background:url(./../images/catalogue/banner.jpg) no-repeat center;
+	background-size:cover;
+	position:relative;
+	margin:0 auto;
+	&:before{
+		content:"";
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:black;
+		opacity:.6;
+	}
+	.wrapContent{
+		position:absolute;
+		width: 100%;
+		max-width: 1000px;
+		font-family: sans-serif;
+		bottom:5%;
+		padding-left: 5rem;
+		.title{
+			color: white;
+			font-size: 4rem;
+			font-weight:800;	   
+		}
+		#bn-menu{
+			margin-top:3rem;
+			display: flex;
+   			flex-direction: row;
+			.nav-item{
+				margin-right: 3rem;
+				.nav-link{
+					color: white;
+				}
+			}
+		}
+	}
+}
+/** ==================== MAIN ================== **/
+#main{
+	.container-full{
+		width:90%;
+		margin:0 auto;
+	}
+}
+/** ----------- main - top -------------- **/
+#main-top{
+	margin-top:3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.9rem;
+	#left{
+		span{
+			color: #5f5e5e;
+		}
+	}
+	#right{
+		#view{
+			font-size: 0.9rem;
+		}
+		#page-number{
+			a{
+				color:black;
+				margin:0 0.4rem;
+				&:last-child{
+					margin-right:1rem;
+				}
+			}
+		}
+		#formSorting{
+			width:175px;
+			> label{
+				padding-left:1rem;
+				border-left:0.1rem solid #ccc;
+				margin-bottom:0;
+				.caret-down{
+					margin-left:1rem;
+				}
+			}
+			.hover-animate{
+				&:before{
+					transform: translate(1rem,0.2rem);
+					background-color:#333;
+				}
+				&:hover:before{
+					width: 90%;
+				}
+			}
+			select#sorting{
+				opacity:0;
+				transform:translateY(-22px);
+			}
+		}
+	}
+}
+#product-area{
+	.slide-area{
+		.brick-in-image{
+			display: flex;
+			flex-direction: column;
+			margin: 0.5rem 0;
+			height: 60px;
+			width: 80px;
+			top: 0;
+			.item-dot{
+				margin:0.3rem 0;
+				height:2px;
+			}
+		}
+	}
+}
+/** ----------- pagination ------------- **/
+#pagination{
+	margin: 3rem;
+	ul{
+		list-style: none;
+		.nav-item{
+			margin:0 0.5rem;
+			.nav-link{
+				color: #333;
+				font-weight: 700;
+			}
+		}
+		.current-page{
+			.nav-link{
+				border:1px solid #ccc;
+			}
+		}
+	}
+	#wrapper{
+		width:100%;
+		max-width:550px;
+		justify-content:space-around;
+	}
+	button#next,button#prev{
+		outline: none;
+		border: none;
+		border: 1px solid #ccc;
+		padding: 0.1rem 2rem 0.1rem 2rem;
+		background: transparent;
+		height: 45px;
+		.icon{
+			font-size: 1.5rem;
+    		color: #ccc;
+		}
+	}
+}
+
+@media screen and (max-width: 1030px){
+	/** ---------------- banner --------------- **/
+	#banner{
+		height:500px;
+		.wrapContent{
+			padding:0 3rem;
+			h1{
+				text-align:center;
+			}
+			#bn-menu{
+				margin-top:1.5rem;
+				flex-wrap:wrap;
+				justify-content: center;
+				.nav-item{
+					margin:0 1rem;
+				}
+			}
+		}
+	}
+	/** ------------- main - top ------------- **/
+	#main-top{
+		#right{
+			#view{
+				display:none;
+			}
+			#page-number{
+				display:none;
+			}
+			#formSorting{
+				> label{
+					border-left:none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	/** ------------------ banner ----------------- **/
+	#banner{
+		.wrapContent{
+			h1.title{
+				font-size:2.5rem;
+			}
+		}
+		#bn-menu{
+			.nav-item{
+				.nav-link{
+					font-size:0.9rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px){
+	#main-top{
+		flex-direction:column;
+		#left{
+			width:100%;
+			span{
+				color: #5f5e5e;
+			}
+		}
+		#right{
+			margin-top:1rem;
+			width:100%;
+			justify-content:flex-end;
+			#view{
+				font-size: 0.9rem;
+			}
+		}
+	}
+	#pagination{
+		ul{
+			.nav-item{
+				margin:0;
+				.nav-link{
+					padding: .4rem 1rem;
+					font-size: 0.9rem;
+				}
+			}
+		}
+		button#next,button#prev{
+			margin:0 0.5rem;
+			padding: 0.1rem 1rem 0.1rem 1rem;
+			height: 35px;
+			.icon{
+				font-size: 1.2rem;
+				color: #ccc;
+			}
+		}
+	}
+}
